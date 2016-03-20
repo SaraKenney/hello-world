@@ -3,31 +3,62 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul {
   padding: 0;
 }
 body {
-  width: 90%;
-  margin: 0 auto;
+  margin: 2em auto;
+  color: black;
+  font: normal 100%/150% "Josefin Sans", sans-serif;
+  padding: 0 1em;
+  max-width: 64em;
+}
+.clearfix:after: {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+
 }
 header {
-  margin: 1em;
+  padding: 0 0 2em 0;
+  text-align: center;
 }
-/*.clearfix:after {
-  content: "";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}*/
-
-img {
-
-width: 10%;
+h1, h2, h3 {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 1.5em
+}
+/* here is a media query to float the image when the media width is 32 em or 512 pixels*/
+@media (min-width: 32em){
+  header img {
+    float: left;
+  }
 }
 
-li {
+
+header img {
+
+width: 10vmax;
+height: 10vmax;
+
+}
+nav {
+  padding: 1em 0;
+}
+header nav li {
   list-style: none;
+  display: inline;
 
 }
-a {
-  margin: 1em;
+header nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 4vw;
+  padding: .5em;
+
+
 }
 /*a:link, a:visited {
     background-color: #f44336;
@@ -42,7 +73,8 @@ a {
 a:hover, a:active {
     background-color: red;
 }*/
-.feature {
+#feature {
   width:100%
   clear: both;
+  text-align: center;
 }
