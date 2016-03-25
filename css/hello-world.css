@@ -73,6 +73,11 @@ header nav a:hover {
   background-color: #2db2c4;
   color: white;
 }
+a.active {
+  background-color: yellow;
+  border: 1px solid pink;
+  border-radius: 3px;
+}
 /*a:link, a:visited {
     background-color: #f44336;
     color: white;
