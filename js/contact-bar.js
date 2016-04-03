@@ -16,4 +16,4 @@ function handler() {
     myContactBar.classList.remove('open');
     myContactBar.classList.add('close');
   }
-}  
+}
