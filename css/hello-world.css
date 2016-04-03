@@ -3,11 +3,23 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul {
   padding: 0;
 }
 body {
-  margin: 2em auto;
+  margin: 0em auto;
   color: black;
   font: normal 100%/150% "Josefin Sans", sans-serif;
   padding: 0 1em;
   max-width: 64em;
+}
+#contact-bar {
+  height: 200px;
+  background-color: black;
+}
+
+.close {
+  margin-top: -200px;
+}
+
+.open {
+  margin-top: 0;
 }
 .clearfix:after {
   content: " ";
